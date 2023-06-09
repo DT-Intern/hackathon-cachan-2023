@@ -47,6 +47,9 @@ PROTO TT02 [
       }
       Emitter {
       }
+      Receiver {
+        
+      }
       Speaker {
         translation 0.257 0 0
         name "TT02_speaker"

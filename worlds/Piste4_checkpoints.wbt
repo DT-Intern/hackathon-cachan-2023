@@ -7,8 +7,8 @@ IMPORTABLE EXTERNPROTO "../protos/TT02.proto"
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.24846384718531422 -0.8033860914169615 0.5411437006559816 5.418907841420217
-  position -8.082339941616702 3.059085057886403 7.9276381858068685
+  orientation 0.1909301880344974 -0.07197977959828267 -0.9789609668552134 3.6629550700095503
+  position 15.388583804830356 -7.133918847597099 7.5227148296322754
   followType "Mounted Shot"
 }
 TexturedBackground {
@@ -2185,7 +2185,7 @@ DEF TT02 TT02 {
   translation -2.000004110505416 -2.7499997672603422 0.0893043024707054
   rotation 0 1 0 0.00010320690694605927
   name "TT02_jaune"
-  controller "controller_runner"
+  controller "controller_trainer"
   controllerArgs [
     ""
   ]
@@ -2209,9 +2209,35 @@ Solid {
 }
 Robot {
   children [
+    Emitter {
+    }
     Receiver {
     }
   ]
+  name "host"
   controller "controller_supervisor"
   supervisor TRUE
+}
+DEF checkpoint1 Solid {
+  translation -2.31 -2.49 1
+  name "checkpoint1"
+  boundingObject Box {
+    size 0.3 1.9 0.5
+  }
+}
+DEF checkpoint2 Solid {
+  translation 3.74 0.04 1.19
+  rotation 0 0 1 -1.5707953071795862
+  name "checkpoint2"
+  boundingObject Box {
+    size 0.3 1.9 0.5
+  }
+}
+DEF checkpoint3 Solid {
+  translation 0.0500003 2.42 0.98
+  rotation 0 0 1 -1.5707953071795862
+  name "checkpoint3"
+  boundingObject Box {
+    size 0.3 1.9 0.5
+  }
 }
