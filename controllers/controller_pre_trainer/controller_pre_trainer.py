@@ -8,6 +8,7 @@ from keras.callbacks import EarlyStopping
 pre_trainer_model = Sequential()
 pre_trainer_model.add(Dense(64, input_shape=(200,), activation="relu"))
 pre_trainer_model.add(BatchNormalization())
+pre_trainer_model.add(Dense(32, activation="relu"))
 pre_trainer_model.add(Dropout(0.1))
 pre_trainer_model.add(BatchNormalization())
 pre_trainer_model.add(Dense(2))
@@ -67,21 +68,20 @@ while driver.step() != -1:
         print("Collecting data", len(training_data))
 
         # Once you have collected enough training samples, you can start training the model
-        if len(training_data) >= 3000:
+        if len(training_data) >= 1400:
             training_data = np.array(training_data)
             target_data = np.array(target_data)
 
             # Add early stopping callback
-            early_stopping = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
+            # early_stopping = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
 
             # Train the model with early stopping
-            pre_trainer_model.fit(training_data, target_data, epochs=10, batch_size=32, validation_split=0.2,
-                                  callbacks=[early_stopping])
+            pre_trainer_model.fit(training_data, target_data, epochs=20, batch_size=32, validation_split=0.2)
 
             # Clear the training data lists for the next iteration
             training_data = []
             target_data = []
 
-    # Save the model
-    print("Saving model")
-    pre_trainer_model.save("pre_trainer_model.h5")
+            # Save the model
+            print("Saving model")
+            pre_trainer_model.save("pre_trainer_model.h5")

@@ -2,18 +2,19 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 from keras.models import Sequential, load_model
-from keras.layers import Dense, BatchNormalization
+from keras.layers import Dense, Dropout, BatchNormalization
 from vehicle import Driver
 from controller import Lidar
 import numpy as np
 import random
 
-pre_trainer_model = load_model("pre_trainer_model.h5")
+pre_trainer_model = load_model("../controller_pre_trainer/pre_trainer_model.h5")
 
 model = Sequential()
 model.add(Dense(64, input_shape=(200,), activation="relu"))
 model.add(BatchNormalization())
-model.add(Dense(64, activation="relu"))
+model.add(Dense(32, activation="relu"))
+model.add(Dropout(0.1))
 model.add(BatchNormalization())
 model.add(Dense(2))
 model.set_weights(pre_trainer_model.get_weights())
@@ -22,7 +23,8 @@ model.compile(loss="mean_squared_error", optimizer="adam")
 target_model = Sequential()
 target_model.add(Dense(64, input_shape=(200,), activation="relu"))
 target_model.add(BatchNormalization())
-target_model.add(Dense(64, activation="relu"))
+target_model.add(Dense(32, activation="relu"))
+target_model.add(Dropout(0.1))
 target_model.add(BatchNormalization())
 target_model.add(Dense(2))
 target_model.set_weights(model.get_weights())
@@ -123,8 +125,13 @@ for episode in range(1000):
         if collision_occurred(lidar_data, 0.17):
             break
 
-        set_speed_m_s(speed)
-        set_direction_degree(steering)
+        if steering > 0.314:
+            steering = 0.3
+        elif steering < -0.314:
+            steering = -0.3
+
+        driver.setCruisingSpeed(float(speed))
+        driver.setSteeringAngle(float(steering))
 
         reward = calculate_reward(speed, lidar_data)
         replay_buffer.append((processed_data, action, reward))

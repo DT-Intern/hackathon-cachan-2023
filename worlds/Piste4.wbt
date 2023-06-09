@@ -2185,7 +2185,7 @@ DEF TT02 TT02 {
   translation -2.000004110505416 -2.7499997672603422 0.0893043024707054
   rotation 0 1 0 0.00010320690694605927
   name "TT02_jaune"
-  controller "controller_pre_trainer"
+  controller "controller_runner"
   controllerArgs [
     ""
   ]

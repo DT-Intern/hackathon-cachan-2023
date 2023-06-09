@@ -42,11 +42,16 @@ while driver.step() != -1:
         print("Nan speed or steering")
         continue
 
+    if steering > 0.314:
+        steering = 0.3
+    elif steering < -0.314:
+        steering = -0.3
+
     print(speed)
     print(steering)
 
     # set_speed_m_s(speed)
     # set_direction_degree(steering)
 
-    driver.setCruisingSpeed(speed)
-    driver.setSteeringAngle(steering)
+    driver.setCruisingSpeed(float(speed))
+    driver.setSteeringAngle(float(steering))
