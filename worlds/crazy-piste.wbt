@@ -7,8 +7,8 @@ IMPORTABLE EXTERNPROTO "../protos/TT02.proto"
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.03187029035606477 -0.9978109741919082 -0.05794432133362991 5.275534121053912
-  position -19.552916535668054 3.823331129369528 23.58478321552385
+  orientation 0.200422222838543 -0.5621279407204719 -0.802398349234231 5.446887982890015
+  position 3.411979954784774 5.762038412685745 1.9074681104330027
   followType "Mounted Shot"
 }
 TexturedBackground {
@@ -126,8 +126,197 @@ Group {
       }
     }
     Solid {
-      translation 5.55 -0.75 0.1
-      rotation 0 0 1 -1.5707953071795862
+      translation -0.633485 4.80233 0.185
+      rotation 0 0 1 1.83259
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(16)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -1.25975 4.93263 0.185
+      rotation 0 0 1 -1.0472053071795866
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(29)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -2.98309 3.93763 0.185
+      rotation 0 0 1 2.09439
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(31)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -0.430669 4.25663 0.185
+      rotation 0 0 1 -1.0472053071795866
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(33)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -2.96943 3.93397 0.185
+      rotation 0 0 1 0.523591
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(34)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -2.8429 3.09483 0.185
+      rotation 0 0 -1 -0.523595307179586
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(30)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -2.08485 3.60179 0.185
+      rotation 0 0 1 2.09439
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(32)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 2.07206 5.01403 0.1
+      rotation 0 0 1 -2.8797953071795863
       children [
         Shape {
           appearance PBRAppearance {
@@ -164,8 +353,8 @@ Group {
       }
     }
     Solid {
-      translation 5.5 0.5 0.1
-      rotation 0 0 1 -1.5707953071795862
+      translation 1.61151 5.74626 0.1
+      rotation 0 0 1 0.2618
       children [
         Shape {
           appearance PBRAppearance {
@@ -309,8 +498,8 @@ Group {
       }
     }
     Solid {
-      translation -4.5 -3 0.185
-      rotation 0 0 1 -5.307179586466759e-06
+      translation 2.1866 6.61464 0.185
+      rotation 0 0 1 0.523593
       children [
         Shape {
           appearance Appearance {
@@ -356,6 +545,87 @@ Group {
         }
       ]
       name "virage_vert(13)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -6.64797 10.8108 0.185
+      rotation 0 0 -1 2.09441
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(21)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -7.03297 10.1421 0.185
+      rotation 0 0 -1 0.523614
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(22)"
+      boundingObject Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -3.96733 8.3721 0.185
+      rotation 0 0 -1 0.523614
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(23)"
       boundingObject Mesh {
         url [
           "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
@@ -635,7 +905,7 @@ Group {
       }
     }
     Solid {
-      translation 0.535224 7.51179 0.185
+      translation 0.605224 7.69179 0.185
       rotation 0 0 -1 5.92017e-06
       children [
         Shape {
@@ -689,7 +959,7 @@ Group {
       }
     }
     Solid {
-      translation 0.206817 4.60823 3.55272e-15
+      translation 2.66094 8.3887 3.19744e-14
       rotation 0 1 0 0
       children [
         Shape {
@@ -1073,8 +1343,8 @@ Group {
       }
     }
     Solid {
-      translation 4.5 -1 0.1
-      rotation 0 0 1 -1.5707953071795862
+      translation 0.7467 5.40089 0.1
+      rotation 0 0 1 -2.6179953071795863
       children [
         Shape {
           appearance PBRAppearance {
@@ -1149,8 +1419,8 @@ Group {
       }
     }
     Solid {
-      translation 2 -3.5 0.1
-      rotation 0 0 1 3.14159
+      translation 1.3407 4.8192 0.1
+      rotation 0 0 1 -2.8797953071795863
       children [
         Shape {
           appearance PBRAppearance {
@@ -1339,7 +1609,7 @@ Group {
       }
     }
     Solid {
-      translation -0.418787 4.18335 0.1
+      translation -0.439491 4.10607 0.1
       rotation 0 0 -1 1.8326
       children [
         Shape {
@@ -1396,8 +1666,8 @@ Group {
       }
     }
     Solid {
-      translation -2.75 -1.5 0.1
-      rotation 0 0 1 3.14159
+      translation 2.31705 5.9483 0.1
+      rotation 0 0 1 -2.8797953071795863
       children [
         Shape {
           appearance PBRAppearance {
@@ -1415,8 +1685,8 @@ Group {
       }
     }
     Solid {
-      translation -1.75 -1.5 0.1
-      rotation 0 0 1 3.14159
+      translation 0.0998441 5.02232 0.1
+      rotation 0 0 1 -2.6179953071795863
       children [
         Shape {
           appearance PBRAppearance {
@@ -1434,8 +1704,8 @@ Group {
       }
     }
     Solid {
-      translation -2.65359e-06 -3.5 0.1
-      rotation 0 0 1 3.14159
+      translation -0.138067 6.71002 0.1
+      rotation 0 0 -1 0.523602
       children [
         Shape {
           appearance PBRAppearance {
@@ -1453,8 +1723,445 @@ Group {
       }
     }
     Solid {
-      translation -1 -3.5 0.1
-      rotation 0 0 1 3.14159
+      translation -0.396235 7.78282 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(60)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -5.95596 10.9928 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(61)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -6.07884 10.1385 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(71)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -6.35596 10.2979 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(72)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -1.87512 6.5783 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(74)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -1.08706 6.1233 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(91)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -6.72847 10.513 0.1
+      rotation 0 0 1 1.04719
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(81)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -6.20747 9.41437 0.1
+      rotation 0 0 1 1.04719
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(83)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -5.16611 9.29809 0.1
+      rotation 0 0 1 1.04719
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(82)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -3.52918 7.5333 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(79)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.70648 7.0583 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(80)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -5.1919 8.4933 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(77)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -4.3692 8.0183 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(78)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -6.84596 9.4483 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(75)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -6.04058 8.9833 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(76)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -7.23062 10.8029 0.1
+      rotation 0 0 1 -2.094395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(73)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -4.36252 10.0728 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(68)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -4.36252 10.0728 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(69)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -5.15058 10.5278 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(70)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -3.57447 9.6178 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(62)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.77775 9.15782 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(63)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.03298 8.72782 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(64)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -1.21028 8.25282 0.1
+      rotation 0 0 -1 0.523602
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(65)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 0.769015 6.33431 0.1
+      rotation 0 0 1 2.87979
       children [
         Shape {
           appearance PBRAppearance {
@@ -1472,8 +2179,8 @@ Group {
       }
     }
     Solid {
-      translation -2 -3.5 0.1
-      rotation 0 0 1 3.14159
+      translation 2.82115 6.0749 0.1
+      rotation 0 0 1 -2.8797953071795863
       children [
         Shape {
           appearance PBRAppearance {
@@ -1682,7 +2389,7 @@ Group {
       }
     }
     Solid {
-      translation -3 -3.5 0.1
+      translation 2.88 6.19 0.1
       rotation 0 0 1 3.14159
       children [
         Shape {
@@ -1701,8 +2408,8 @@ Group {
       }
     }
     Solid {
-      translation -4 -3.5 0.1
-      rotation 0 0 1 3.14159
+      translation 1.3081 6.18607 0.1
+      rotation 0 0 1 -2.8797953071795863
       children [
         Shape {
           appearance PBRAppearance {
@@ -1848,6 +2555,120 @@ Group {
         }
       ]
       name "droit_1m(21)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.19095 2.91056 0.1
+      rotation 0 0 1 0.523599
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(96)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.07619 4.43173 0.1
+      rotation 0 0 1 0.523599
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(95)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -3.65813 3.18221 0.1
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(97)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -3.55917 3.84681 0.1
+      rotation 0 0 1 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(98)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -1.16927 4.10088 0.1
+      rotation 0 0 1 0.523599
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(94)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -0.271744 4.90793 0.1
+      rotation 0 0 1 0.523595
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m(93)"
       boundingObject Box {
         size 1 0.1 0.2
       }
@@ -2101,25 +2922,29 @@ Group {
     }
   ]
 }
-DEF TT02 TT02 {
-  hidden linearVelocity_0 -6.755499714943461e-05 1.916900701485729e-06 8.861109463535833e-05
-  hidden angularVelocity_0 -2.372581150249285e-05 -0.0008358503969689604 9.821880627381444e-10
-  hidden translation_1 0 0 0
-  hidden rotation_1 0 1 0 0
-  hidden linearVelocity_1 -3.343451944549378e-05 9.49104752939245e-07 0.0004496261275715277
-  hidden angularVelocity_1 -2.3725675472433962e-05 -0.0008358507714384167 9.832827150428977e-10
-  hidden translation_2 0 0 0
-  hidden rotation_2 0 1 0 0
-  hidden linearVelocity_2 -3.343455855962257e-05 9.491078806907193e-07 0.00045275685225134096
-  hidden angularVelocity_2 -2.372569032339867e-05 -0.0008358507770292063 9.832091122157153e-10
-  hidden translation_3 0 0 0
-  hidden linearVelocity_3 -3.343772026069132e-05 9.490774822494948e-07 0.0002478734020081007
-  hidden angularVelocity_3 -2.3725672260301745e-05 -0.0008358505529554864 9.831841963562347e-10
-  hidden translation_4 0 0 0
-  hidden linearVelocity_4 -3.343775967776399e-05 9.490806107968006e-07 0.00025100412668775256
-  hidden angularVelocity_4 -2.3725687110976868e-05 -0.000835850569681503 9.83020606981879e-10
-  translation -2.0000082791314777 -2.749999646394187 0.08928363623846744
-  rotation -0.9558196400650087 -0.2939537643281285 1.0164662401544358e-05 3.1631313255303026e-06
+DEF a TT02 {
+  hidden position_0_0 2.7173785011005952e-08
+  hidden position2_0_0 2.239704114221817e-06
+  hidden position_0_1 1.7368977418878648e-08
+  hidden position2_0_1 2.192572999795159e-06
+  hidden position_0_2 -2.257121303502034e-07
+  hidden position_0_3 -3.4639553390597477e-07
+  hidden linearVelocity_0 -5.67964022248729e-12 -3.2844333286466757e-12 2.3084100856303105e-15
+  hidden angularVelocity_0 -4.0026606409046477e-13 7.127132812206172e-13 1.2134536907328399e-12
+  hidden rotation_1 -0.9999264062327609 1.3585892594898424e-08 -0.012131863765953878 2.239937475218121e-06
+  hidden linearVelocity_1 -1.8041406495939028e-12 -9.88956160131801e-13 -8.437042765271823e-14
+  hidden angularVelocity_1 -2.6632111296277974e-13 5.646736470388226e-13 1.211262476192324e-12
+  hidden rotation_2 0.9999686245515209 -8.684216229711254e-09 -0.007921484238398536 2.1926490338942206e-06
+  hidden linearVelocity_2 -1.7604045793277192e-12 -9.591385678128426e-13 -8.509747691243758e-14
+  hidden angularVelocity_2 -3.0563079201746913e-13 5.455056996819469e-13 1.214645400667513e-12
+  hidden rotation_3 1 0 0 2.2500259981366257e-07
+  hidden linearVelocity_3 -1.0108112947997472e-11 -5.895460904202779e-12 8.542064724460683e-14
+  hidden angularVelocity_3 1.745907400525403e-10 -3.022972054029645e-10 1.2144337799495736e-12
+  hidden rotation_4 -1 0 0 3.462716948575456e-07
+  hidden linearVelocity_4 -9.177356104143228e-12 -5.358126443466639e-12 8.380500994418063e-14
+  hidden angularVelocity_4 1.5606427418784346e-10 -2.7015891622144266e-10 1.2156121105379493e-12
+  translation 5.871601755728029 6.918021943097392 0.08930518681587568
+  rotation 4.057256121738831e-05 -0.00019483454992411196 0.9999999801966827 0.5237353060959988
   name "TT02_jaune"
   controller "controller_jaune"
   controllerArgs [
@@ -2217,22 +3042,136 @@ Solid {
   name "solid(4)"
 }
 Solid {
-  translation -0.131866 0.714305 3.55272e-15
-  rotation 0 1 0 0
+  translation -3.64549 8.73502 0.1
+  rotation 0 0 -1 0.523602
   children [
     Shape {
       appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
       }
       geometry Box {
-        size 20 20 0.1
+        size 1 0.1 0.2
       }
     }
   ]
-  name "solid(1)"
-  boundingObject Shape {
-    geometry Box {
-      size 10 10 0.1
+  name "droit_1m(33)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -4.43355 9.19002 0.1
+  rotation 0 0 -1 0.523602
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
     }
+  ]
+  name "droit_1m(66)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -5.28223 9.68 0.1
+  rotation 0 0 -1 0.523602
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(67)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -3.03063 8.38002 0.1
+  rotation 0 0 -1 0.523602
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(36)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -2.38112 8.00502 0.1
+  rotation 0 0 -1 0.523602
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(57)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -1.64504 7.58002 0.1
+  rotation 0 0 -1 0.523602
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(58)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -0.865622 7.13002 0.1
+  rotation 0 0 -1 0.523602
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(59)"
+  boundingObject Box {
+    size 1 0.1 0.2
   }
 }
 Solid {
@@ -2292,7 +3231,7 @@ Solid {
   }
 }
 Solid {
-  translation -0.131866 0.714305 3.55272e-15
+  translation 4.07813 0.714305 3.55272e-15
   rotation 0 1 0 0
   children [
     Shape {
@@ -2308,6 +3247,128 @@ Solid {
     geometry Box {
       size 10 10 0.1
     }
+  }
+}
+Solid {
+  translation -2.86656 5.91571 0.1
+  rotation 0 0 -1 0.523596
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(106)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -2.67273 4.71509 0.1
+  rotation 0 0 1 2.618
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(104)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -4.57018 4.75884 0.1
+  rotation 0 0 1 0.785401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(101)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -1.07326 5.60946 0.1
+  rotation 0 0 1 0.523596
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(92)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation 0.814348 5.76561 0.1
+  rotation 0 0 -1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(90)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -3.85609 8.28478 0.185
+  rotation 0 0 1 2.61798
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 0.5
+          diffuseColor 0.9 0 0
+          emissiveColor 0.9 0 0
+          specularColor 0.9 0 0
+        }
+      }
+      geometry Mesh {
+        url [
+          "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+  ]
+  name "virage_vert(28)"
+  boundingObject Mesh {
+    url [
+      "https://raw.githubusercontent.com/ajuton-ens/CourseVoituresAutonomesSaclay/main/Simulateur/SimulateurWebotsENS2022/ImageToStl.com_virage.obj"
+    ]
   }
 }
 Solid {
@@ -2391,6 +3452,215 @@ Solid {
     }
   ]
   name "solid(2)"
+  boundingObject Shape {
+    geometry Box {
+      size 10 10 0.1
+    }
+  }
+}
+Solid {
+  translation -1.71361 5.84787 0.1
+  rotation 0 0 1 -0.785395307179586
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(107)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -2.29867 6.56953 0.1
+  rotation 0 0 1 -1.047195307179586
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(108)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -4.00454 5.3386 0.1
+  rotation 0 0 1 0.785401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(102)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -3.52373 5.84769 0.1
+  rotation 0 0 1 0.785401
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(105)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -4.36514 3.88922 0.1
+  rotation 0 0 1 -0.785395307179586
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(99)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -5.02266 4.54674 0.1
+  rotation 0 0 1 -0.785395307179586
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(100)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -0.131866 0.714305 3.55272e-15
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 20 20 0.1
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject Shape {
+    geometry Box {
+      size 10 10 0.1
+    }
+  }
+}
+Solid {
+  translation -2.76007 7.58561 0.1
+  rotation 0 0 1 2.61799
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(87)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -1.77283 7.01561 0.1
+  rotation 0 0 1 2.61799
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(88)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -0.86353 6.49061 0.1
+  rotation 0 0 1 2.61799
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.1 0.2
+      }
+    }
+  ]
+  name "droit_1m(89)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+}
+Solid {
+  translation -16.6619 11.0343 3.55272e-15
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 20 20 0.1
+      }
+    }
+  ]
+  name "solid(1)"
   boundingObject Shape {
     geometry Box {
       size 10 10 0.1
