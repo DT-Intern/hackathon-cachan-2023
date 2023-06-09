@@ -1,9 +1,14 @@
-from keras.models import Sequential
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
+from keras.models import Sequential, load_model
 from keras.layers import Dense, BatchNormalization
 from vehicle import Driver
 from controller import Lidar
 import numpy as np
 import random
+
+pre_trainer_model = load_model("pre_trainer_model.h5")
 
 model = Sequential()
 model.add(Dense(64, input_shape=(200,), activation="relu"))
@@ -11,6 +16,8 @@ model.add(BatchNormalization())
 model.add(Dense(64, activation="relu"))
 model.add(BatchNormalization())
 model.add(Dense(2))
+model.set_weights(pre_trainer_model.get_weights())
+model.compile(loss="mean_squared_error", optimizer="adam")
 
 target_model = Sequential()
 target_model.add(Dense(64, input_shape=(200,), activation="relu"))
@@ -19,8 +26,6 @@ target_model.add(Dense(64, activation="relu"))
 target_model.add(BatchNormalization())
 target_model.add(Dense(2))
 target_model.set_weights(model.get_weights())
-
-model.compile(loss="mean_squared_error", optimizer="adam")
 
 driver = Driver()
 emitter = driver.getDevice("emitter")
@@ -40,24 +45,23 @@ def collision_occurred(lidar_data, threshold_distance):
             return True
     return False
 
+
 def calculate_reward(speed, lidar_data):
     # Define reward weights
-    speed_weight = 0.9
-    progress_reward = 0.4
-    collision_penalty = -10.0
+    speed_weight = 1.2
+    collision_penalty = -20.0
+
+    # Check the distance to the wall
+    distance_diff = lidar_data[0] - lidar_data[-1]
+    distance_weight = 0.4
 
     # Check for collision
-    if collision_occurred(lidar_data, 0.1):
+    if collision_occurred(lidar_data, 0.2):
         return collision_penalty
 
-    # Calculate progress reward based on distance traveled
-    progress = distance_traveled / 1000
-    progress_reward = progress * progress_reward
-
     # Calculate the overall reward
-    reward = (speed_weight * speed) + progress_reward
+    return (speed_weight * speed) - distance_diff * distance_weight
 
-    return reward
 
 def set_speed_m_s(speed_m_s):
     speed = speed_m_s * 3.6
@@ -114,6 +118,9 @@ for episode in range(1000):
             time_progressed_standing += basicTimeStep
 
         if np.isnan(speed) or np.isnan(steering):
+            continue
+
+        if collision_occurred(lidar_data, 0.17):
             break
 
         set_speed_m_s(speed)
