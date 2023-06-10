@@ -3,7 +3,9 @@ from controller import Lidar
 from keras.models import Sequential
 from keras.layers import Dense, BatchNormalization, Dropout
 import numpy as np
-from keras.callbacks import EarlyStopping
+from keras.models import load_model
+
+loaded_model = load_model("pre_trainer_model.h5")
 
 pre_trainer_model = Sequential()
 pre_trainer_model.add(Dense(64, input_shape=(200,), activation="relu"))
@@ -13,6 +15,7 @@ pre_trainer_model.add(Dropout(0.1))
 pre_trainer_model.add(BatchNormalization())
 pre_trainer_model.add(Dense(2))
 pre_trainer_model.compile(loss="mean_squared_error", optimizer="adam")
+pre_trainer_model.set_weights(loaded_model.get_weights())
 
 driver = Driver()
 

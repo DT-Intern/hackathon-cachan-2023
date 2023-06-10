@@ -21,6 +21,7 @@ while supervisor.step(int(supervisor.getBasicTimeStep())) != -1:
         if message == "reset":
             tt_02_translation.setSFVec3f(initial_translation)
             tt_02_rotation.setSFRotation(initial_rotation)
+            # supervisor.simulationReset()
             # tt_02_translation.setSFVec3f([-2, -2.5, 0.1])
             # tt_02_rotation.setSFRotation([0, 0, 1, 0])
         elif message == "checkpoints":
